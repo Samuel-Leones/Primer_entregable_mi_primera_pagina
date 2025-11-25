@@ -1,19 +1,102 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(147, 147, 147, 0.412);
 }
 
 header {
+    background-color: rgba(130, 130, 130, 0.9);
+    color: rgb(255, 255, 255);
+    height: 6rem;
+    width: calc(100% - 2rem); /* Resta el padding del body */
+    margin: auto; /* Centra horizontalmente */
+    border-radius: 10px;
+    border-bottom: 5px solid black;
     display: flex;
-    align-items: center ;
+    align-items: center;
     justify-content: center;
+}
+
+header h1 {
+    text-shadow: 5px 5px 4px black;
 }
 
 .foto {
     display: flex;
+    padding: 1rem;
 }
 
 .foto img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: 2px solid black;
+}
+
+main {
+    width: calc(100% - 2rem); 
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+
+/* Estilos iguales para todas las secciones */
+.intro, .objetivos, .links_redes, .contacto, .hobbies, .tareas {
+    background-color: rgba(105, 104, 104, 0.325);
+    margin: 1rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 0.5rem;
+    height: auto;
+}
+
+/* Estilos iguales para todos los h2 */
+.intro h2, .objetivos h2, .links_redes h2, .contacto h2, .hobbies h2, .tareas h2 {
+    text-align: center;
+    color: black;
+    text-shadow: 5px 5px 4px rgb(255, 255, 255);
+}
+
+.intro p {
+    text-align: justify;
+    margin-top: 0.5rem;
+}
+
+.objetivos ul {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+
+.objetivos ul li {
+    margin-bottom: 0.2rem;
+}
+
+.links_redes p {
+    text-align: center;
+}
+
+.social_media {
+    display: flex;
+}
+
+.social_media ul {
+    display: flex;
+}
+
+.social_media ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.social_media ul li a {
+    text-decoration: none;
+    color: red;
 }
