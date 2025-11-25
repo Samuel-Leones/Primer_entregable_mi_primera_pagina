@@ -1,6 +1,8 @@
 Mi primer entregable y creando un repositorio en GitHub
 
-Este proyecto es parte del laboratorio entregable  del curso Talento Tech. Consiste en una página web sencilla con estructura HTML,y opcional aplicarle algunos estilos CSS.
+Este proyecto es parte del laboratorio entregable  del curso Talento Tech. Consiste en una página web sencilla con estructura HTML que trata de colocar cosas sobre mi, darme a conocer, explorando este mundo de la programación
+
+opcional aplicarle algunos estilos CSS.
 
 ## 📁 Estructura del proyecto
 
@@ -13,6 +15,7 @@ Este proyecto es parte del laboratorio entregable  del curso Talento Tech. Consi
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/Samuel-Leones/Primer_entregable_mi_primera_pagina.git
+    ```
 
 Tecnologías usadas
 - HTML5
