@@ -6,24 +6,26 @@
 }
 
 body {
-    background-color: rgba(147, 147, 147, 0.412);
+    background-color: rgb(0, 0, 0);
 }
 
 header {
-    background-color: rgba(130, 130, 130, 0.9);
-    color: rgb(255, 255, 255);
+    background-color: #0f0f0f;
     height: 6rem;
     width: calc(100% - 2rem); /* Resta el padding del body */
     margin: auto; /* Centra horizontalmente */
     border-radius: 10px;
-    border-bottom: 5px solid black;
+    border: 2px solid rgb(255, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 header h1 {
-    text-shadow: 5px 5px 4px black;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 20px rgb(255, 0, 0);
 }
 
 .foto {
@@ -32,35 +34,48 @@ header h1 {
 }
 
 .foto img {
-    width: 50px;
-    height: 50px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 0, 0);
 }
 
 main {
     width: calc(100% - 2rem); 
     margin: auto;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 0, 0);
     border-radius: 10px;
     margin-top: 0.5rem;
+    padding: 1rem 0;
 }
 
 /* Estilos iguales para todas las secciones */
-.intro, .objetivos, .links_redes, .contacto, .hobbies, .tareas {
-    background-color: rgba(105, 104, 104, 0.325);
+.intro, .objetivos, .links_redes, .hobbies, .tareas {
+    background-color: #0f0f0f;
     margin: 1rem;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #ff0000;
     padding: 0.5rem;
     height: auto;
+    transition: 0.8s;
+    color: white;
 }
 
 /* Estilos iguales para todos los h2 */
-.intro h2, .objetivos h2, .links_redes h2, .contacto h2, .hobbies h2, .tareas h2 {
+.intro h2, .objetivos h2, .links_redes h2, .social_media h2, .hobbies h2, .tareas h2 {
     text-align: center;
-    color: black;
-    text-shadow: 5px 5px 4px rgb(255, 255, 255);
+    color: white;
+    text-shadow: 5px 5px 20px rgb(255, 0, 0);
+}
+
+/* Aplicamos efecto hover para todas las secciones */
+.intro:hover,
+.objetivos:hover,
+.links_redes:hover,
+.hobbies:hover,
+.tareas:hover,
+.formulario:hover {
+    transform: scale(0.98);
 }
 
 .intro p {
@@ -70,12 +85,12 @@ main {
 
 .objetivos ul, .hobbies ul {
     list-style-type: square;
-    padding-left: 2rem;
+    padding: 0.8rem 1.2rem;
     margin-top: 0.5rem;
     border-radius: 5px;
 }
 
-.objetivos ul li {
+.objetivos ul li, .hobbies ul li {
     margin-bottom: 0.3rem;
 }
 
@@ -119,7 +134,7 @@ main {
 }
 
 .social_media ul li a:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: #0f0f0f;
     transform: scale(1.05);
 }
 
@@ -164,4 +179,78 @@ main {
     border: 2px solid rgba(255, 0, 0, 0.536);
     padding: 0.7rem;
     background-color: rgb(0, 0, 0);
+}
+
+.formulario {
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.677);
+    max-width: 28.1rem;
+    border-radius: 0.8rem;
+    color: white;
+    transition: 0.8s;
+}
+
+.formulario h2 {
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 1rem;
+    
+}
+
+.formulario form div {
+    margin-bottom: 1.5rem;
+}
+
+.formulario label {
+    display: block; /* Esta propiedad de display block hace que un elemento ocupe todo el ancho disponible de su contenedor osea el 100% */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius:1rem;
+    border: none;
+    font-size: 1rem;
+    outline: none; /* Esta propiedad sirve para quitar los bordes que aparecen alrededor*/ 
+    transition: 0.3s;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.679);
+    background-color: #000000;
+    color: white;
+    font-weight: 600;
+}
+
+.formulario textarea {
+    resize: none; /* Esta propiedad sirve para que el usuario no pueda cambiar el tamaño del textarea ya que por defecto viene con eso */
+}
+
+.formulario input:focus, /* Esta propiedad de selector focus se usa para aplicar estilos a un elemento de formulario (como input) cuando este tiene el foco, es decir, cuando el usuario hace clic en él o lo selecciona para introducir texto. Su función principal es indicar visualmente al usuario en qué campo está escribiendo para mejorar la usabilidad y accesibilidad */
+.formulario textarea:focus {
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.679);
+    transform: scale(1.03);
+}
+
+.formulario button {
+    width: 100%;
+    padding: 0.7rem;
+    background: red;
+    color: white;
+    font-size: 16px;
+    font-weight:bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: white;
+    color: red;
+    transform: scale(1.03);
 }

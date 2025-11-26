@@ -19,7 +19,7 @@ opcional aplicarle algunos estilos CSS.
 
 Tecnologías usadas
 - HTML5
-- CSS3 (Poco Implementado)
+- CSS3 
 - Git y GitHub
 
 Autor
