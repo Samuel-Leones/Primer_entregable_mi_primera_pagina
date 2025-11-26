@@ -68,7 +68,7 @@ main {
     margin-top: 0.5rem;
 }
 
-.objetivos ul {
+.objetivos ul, .hobbies ul {
     list-style-type: square;
     padding-left: 2rem;
     margin-top: 0.5rem;
@@ -76,27 +76,92 @@ main {
 }
 
 .objetivos ul li {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem;
 }
 
 .links_redes p {
     text-align: center;
+    margin: 1rem 0 1rem 0;
 }
 
+/* Aplicacion de display flex para colocar los elementos horizontalmente y alineado al centro*/
 .social_media {
     display: flex;
+    justify-content: center;  
+    align-items: center;    
 }
 
 .social_media ul {
     display: flex;
+    gap: 20px; 
 }
 
 .social_media ul li {
     list-style: none;
-    padding: 10px;
 }
 
 .social_media ul li a {
+    display: flex;    
+    align-items: center;
+    gap: 8px;                         
     text-decoration: none;
     color: red;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;                    
+    border-radius: 6px;   
+    transition: 0.3s; 
+}
+
+.social_media ul li i {
+    font-size: 22px;             
+    color: red;
+}
+
+.social_media ul li a:hover {
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.05);
+}
+
+.tareas ol {
+    margin: 1rem 0 1rem 2rem;
+    text-align: center;
+}
+
+.tareas ol li {
+    font-size: 16px;
+    color: #ff0000;
+    margin-bottom: 0.7rem;     
+    background-color: #000000;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    max-width: 18.8rem;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.tareas ol li:hover {
+    background-color: #ff0000;
+    color: #000000;
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+.tareas h2 {
+    margin-bottom: 1rem;
+}
+
+.tareas table {
+    margin: auto; /* Esto lo que hace es centrar horizontalmente ya sea un contenedor */
+    width: 80%;
+    border-collapse: collapse; /* Esta propiedad lo que es que fusiona los bordes de las celdas de una tabla en un solo borde */
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.tareas table thead tr th, 
+.tareas table tbody tr td{
+    border: 2px solid rgba(255, 0, 0, 0.536);
+    padding: 0.7rem;
+    background-color: rgb(0, 0, 0);
 }
